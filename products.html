@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="css/Products.css">
+<script src="jquery-3.5.1.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="Assets/logo-removebg-preview.png" width="200px" height="100px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="login.html">Sign In</a></li>
+			</ul>
+		</nav>
+		
+		<img src="Assets/menu.png" class="menu-icon" onClick="menutoggle()">
+	</div>
+	
+	
+	</div>
+</div>
+	
+	<!-------slider--->
+	 <div class="img-slider">
+      <div class="slide active">
+        <img src="Assets/slide1.jpg" alt="">
+        <div class="info">
+          <h2>Playin Styles</h2>
+          <p>There are three main types of modern guitar: the classical guitar (Spanish guitar/nylon-string guitar); the steel-string acoustic guitar or electric guitar.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/slide2.jpg" alt="">
+        <div class="info">
+          <h2 style="color: crimson">Finger Protectors</h2>
+          <p>The guitar fingertip protector has embossing on the surface that is anti-skid. The polished smooth surfaces of guitar pick will not scratch your hands..</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/slide 3.jpg" alt="">
+        <div class="info">
+          <h2>Sliders</h2>
+          <p>Slide guitar is a technique for playing the guitar that is often used in blues music..</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/slide4.jpg" alt="">
+        <div class="info">
+          <h2 style="color: crimson">Amplifires</h2>
+          <p>A guitar amplifier (or amp) is an electronic device or system that strengthens the weak electrical signal from a pickup on an electric guitar, bass guitar.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/slide5.jpg" alt="">
+        <div class="info">
+          <h2>Mandolin</h2>
+          <p>a musical instrument of the lute family that has a usually pear-shaped body and fretted neck and four to six pairs of strings..</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+	
+	
+	
+	
+	<!--------Ajax And Json----->
+	<h1>Signature Guitar Review</h1>
+	<button id="btn">View More Details</button>
+	
+	<div id="Guitar-info"></div>
+
+ 
+	
+	
+
+	<div class="small-container">
+		
+		 <div class="row row-2 ">
+			<h2>All Products</h2>
+			 <select onChange="la(this.value)">
+			 	<option disabled selected>Categories</option>
+				 <option value="Acoustic.html">Acoustic Guitars</option>
+				 <option value="Electric.html">Electric Guitars</option>
+				 <option value="Bass.html">Bass Guitars</option>
+				 <option value="Padal.html">Guitar Padals</option>
+				 <option value="Other.html">Other Accessories</option>
+			 </select>
+		</div>
+		 
+		<div class="row">
+			<div class="col-4">
+				<a href="Acoustic.html"><img src="Assets/acu3.jpg" ></a>
+				<h4>Acoustic Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				   <p >An acoustic guitar is a instrument in the guitar family, that projects the sounds of its vibrating strings acoustically through  air.</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Electric.html"><img src="Assets/e7.jpg" ></a>
+				<h4>Electric Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<p >An electric guitar is a guitar that uses one or more pickups to convert the vibration of its strings into electrical signals.... </p>
+		  </div>
+			
+			<div class="col-4">
+				<a href="Bass.html"><img src="Assets/f jazz base.png"   ></a>
+				<h4>Bass Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				 <p >The bass guitar, electric bass, or simply bass, is the lowest-pitched member of the guitar family. It is a plucked string instrument.</p>
+		  </div>
+			
+			<div class="col-4">
+				<a href="Keaboard.html"><img src="Assets/classical.jpg"  ></a>
+				<h4>Classical Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				 <p >A musical keyboard is the set of adjacent depressible levers or keys on a musical instrument. Keyboards typically contain  ....</p>
+		  </div>
+		</div>
+				<div class="row">
+			<div class="col-4">
+				<a href="Piano.html"><img src="Assets/semi acoustic.jpg" ></a>
+				<h4>Semi Acoustic Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				 <p >A piano is a large musical instrument that you play by pressing black and white keys on a keyboard. A piano makes  ..</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Wind.html"><img src="Assets/mandolin.jpg" ></a>
+				<h4>Mandolins</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				  <p >A wind instrument is a musical instrument that contains some type of resonator in which a column of air is set into vibration </p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Padal.html"><img src="Assets/r1.jpeg"></a>
+				<h4>Guitar Padals</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				   <p >An effects unit or effects pedal is an electronic device that alters the sound of a musical instrument or other audio source.</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Drums.html"><img src="Assets/banjo.jpg"></a>
+				<h4>Banjo Guitars</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				   <p>The drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system.</p>
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-4">
+				<a href="Percussion.html"><img src="Assets/dbass.jpg" ></a>
+				<h4>Double Bass</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				 <p>A percussion instrument is a musical instrument that is sounded by being struck or scraped by a beater including ..</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Other.html"><img src="Assets/ppick.jpeg"></a>
+				<h4>Other Accessories</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				 <p >Music is an art form, and cultural activity, whose medium is sound. General definitions of music Different styles or types of music...</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Percussion.html"><img src="Assets/chello.jpg"  ></a>
+				<h4>Chello</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<p>a musical instrument in the percussion family consisting of a frame, often of wood or plastic..........</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="Wind.html"><img src="Assets/violins.jpg"  ></a>
+				<h4>Violins</h4>
+				<div class="rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>
+				<p >A wind instrument is a musical instrument that contains some type of resonator in which a column of air is set into vibration</p>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	<!----footer----->
+	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Visit Our Page</h3>
+					<p>Choose your dream instruments and other componants.</p>
+				</div>
+				<div class="footer-col-2">
+					<img src="Assets/logo-removebg-preview.png">
+					<p>We are export the best instruments in the world.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>We Can</h3>
+					<ul>
+						<li>Music instruments</li>
+						<li>Hire</li>
+						<li>Repair</li>
+						<li>Deliver</li>
+						
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+						
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - Guitar enter</p>
+			
+		</div>
+	</div>
+	
+	<!-------------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight == "0px";
+		
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+		}
+	</script>
+	
+	<!----------option script---->
+	
+	<script>
+		function la(src)
+		{
+			window.location=src;
+		}
+	</script>
+	 <script type="text/javascript">
+			var slides = document.querySelectorAll('.slide');
+			var btns = document.querySelectorAll('.btn');
+			let currentSlide = 1;
+
+			// Javascript for image slider manual navigation
+			var manualNav = function(manual){
+			  slides.forEach((slide) => {
+				slide.classList.remove('active');
+
+				btns.forEach((btn) => {
+				  btn.classList.remove('active');
+				});
+			  });
+
+			  slides[manual].classList.add('active');
+			  btns[manual].classList.add('active');
+			}
+
+			btns.forEach((btn, i) => {
+			  btn.addEventListener("click", () => {
+				manualNav(i);
+				currentSlide = i;
+			  });
+			});
+
+			// Javascript for image slider autoplay navigation
+			var repeat = function(activeClass){
+			  let active = document.getElementsByClassName('active');
+			  let i = 1;
+
+			  var repeater = () => {
+				setTimeout(function(){
+				  [...active].forEach((activeSlide) => {
+					activeSlide.classList.remove('active');
+				  });
+
+				slides[i].classList.add('active');
+				btns[i].classList.add('active');
+				i++;
+
+				if(slides.length == i){
+				  i = 0;
+				}
+				if(i >= slides.length){
+				  return;
+				}
+				repeater();
+			  }, 10000);
+			  }
+			  repeater();
+			}
+			repeat();
+    </script>
+
+	
+    <script src="js/main.js"></script>
+	
+	
+</body>
+</html>
